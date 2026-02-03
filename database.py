@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 import sqlite3
-import schedule
 import time
 from datetime import datetime
 
