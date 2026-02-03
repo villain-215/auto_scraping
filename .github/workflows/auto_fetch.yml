@@ -22,7 +22,9 @@ jobs:
           pip install requests beautifulsoup4 lxml
 
       - name: 執行抓取腳本
-        run: python database.py # 記得改成你抓取檔案的檔名
+        run: |
+          python database.py # 記得改成你抓取檔案的檔名
+          ls -lh  # 這是「監視器」：列出檔案大小，讓你在 Log 裡直接看到 db 有多大
 
       - name: 將資料庫更新推回倉庫
         run: |
