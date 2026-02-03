@@ -22,7 +22,7 @@ jobs:
           pip install requests beautifulsoup4 lxml
 
       - name: 執行抓取腳本
-        run: python your_fetch_script.py # 記得改成你抓取檔案的檔名
+        run: python database.py # 記得改成你抓取檔案的檔名
 
       - name: 將資料庫更新推回倉庫
         run: |
